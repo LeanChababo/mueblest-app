@@ -1,13 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
+
+  const persona = { nombre: "lelu", altura: "1,70"}
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Dale Boooo dale boooo pd: {persona.nombre} es hincha de bokita
+          y mide {persona.altura}
         </p>
         <a
           className="App-link"
@@ -17,9 +20,12 @@ function App() {
         >
           Learn React
         </a>
+        <ButtoComponent />
       </header>
     </div>
   );
 }
-
+const ButtoComponent = () => {
+  return <button>Dale que aprendemos react veni paaa </button>
+}
 export default App;
